@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_CPU_EXTRACTION_AND_TEMPERATURE",
+  "supervisor_pid": 46268,
+  "started_utc": "2026-10-25T12:06:45.976587+00:00",
+  "GPU_used": false,
+  "training_steps": 0,
+  "current": null,
+  "completed": [
+    {
+      "stage": "extract4",
+      "rc": 0,
+      "finished_utc": "2026-10-25T12:09:38.391484+00:00"
+    },
+    {
+      "stage": "temperature",
+      "rc": 0,
+      "finished_utc": "2026-10-25T12:09:40.541941+00:00"
+    }
+  ],
+  "heartbeat_utc": "2026-10-25T12:09:40.541941+00:00",
+  "finished_utc": "2026-10-25T12:09:40.541941+00:00"
+}

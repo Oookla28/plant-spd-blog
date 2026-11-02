@@ -1,0 +1,86 @@
+{
+  "status": "SCIENTIFIC_DEFINITION_BEFORE_ANY_REAL_PROBE_FIT",
+  "execution_reason": "Direct human request to run a linear probe after the eight frozen-encoder prototype-head fits",
+  "root": "D:/PlantSPD_work/linear_probe_cross_v1_20261025",
+  "scope": "Exactly four already frozen encoder caches crossed with Raw and Log matrix maps; eight unique CPU-only convex linear probes",
+  "prior_cross_root": "D:/PlantSPD_work/representation_head_cross_v1_20261025",
+  "original_seeds": [3407, 3408],
+  "encoder_sources": ["raw", "log"],
+  "matrix_maps": ["raw", "log"],
+  "data": {
+    "pool": "Original 5230-image TRAIN pool only, existing partition0",
+    "fit_images": 4184,
+    "held_images": 1046,
+    "n_classes": 69,
+    "fit_augmentation": "Uniform weight on both already cached real RGB flip states, 8368 rows; this is a new fixed empirical risk, not replay of old stochastic flip frequencies",
+    "held_augmentation": "Existing unflipped cache only",
+    "prohibited": ["New encoder forward or training", "Original RGB reads", "Old VAL/cal/test/final access", "Masks", "Held-selected hyperparameters or checkpoints"]
+  },
+  "matrix_definition": {
+    "C0": "Existing .95 sample covariance + .05 trace(sample covariance)/32 I, cached float32 without epsilon",
+    "C": "C0 + float32(1e-4) I in float32, exactly once",
+    "raw": "C",
+    "log": "Symmetric float64 eigh and log, strictly positive spectrum, reconstruct and cast float32; no floor or extra jitter",
+    "probe_precision": "Convert mapped matrices to float64 before svec, scaling, and convex optimization",
+    "svec": "Upper triangle32x32 (528 coordinates), offdiagonal times sqrt2, preserving Frobenius inner product"
+  },
+  "scaler": {
+    "fit_scope": "8368 TRAIN augmented rows only, separately per view and cell",
+    "center": "Coordinate vector mean",
+    "scale": "One scalar per view: sqrt(mean over TRAIN augmented rows of squared centered L2 norm)); average centered feature energy becomes1",
+    "whitening_or_coordinate_scaling": false,
+    "held_rule": "Apply frozen TRAIN mean and scalar only",
+    "limit": "Equal total energy does not equalize feature directions or make induced L2 priors identical"
+  },
+  "classifier": {
+    "definition": "Two independent affine linear logits z_v=X_v W_v+b_v; dual logits=(z_0+z_1)/2",
+    "initialization": "All W and b exactly zero, no head randomness",
+    "objective": "mean CE(dual) + .25*(mean CE(view0)+mean CE(view1)) + lambda/2*sum(W^2+b^2)",
+    "regularization_lambda": 0.001,
+    "bias_regularized": true,
+    "no_temperature_parameter": true,
+    "no_prototype_constraint": true,
+    "no_clipping_or_adam": true
+  },
+  "optimizer": {
+    "name": "SciPy L-BFGS-B, no constraints, analytic full-batch float64 gradient",
+    "max_iterations": 1500,
+    "max_function_evaluations": 100000,
+    "maxcor": 20,
+    "maxls": 50,
+    "ftol": 0.0,
+    "gtol_infinity": "1e-6/sqrt(number of parameters)",
+    "acceptance": "Independently recomputed full regularized gradient L2 norm <=1e-6; solver success flag alone is insufficient",
+    "strong_convexity_lambda": 0.001,
+    "certificate": "Objective gap <= ||gradient||_2^2/(2 lambda); parameter distance <= ||gradient||_2/lambda",
+    "max_accepted_gap_bound": 5e-10,
+    "max_accepted_parameter_distance_bound": 0.001,
+    "on_nonconvergence": "Retain actual endpoint and stop remaining queue, no restart or retry"
+  },
+  "secondary_matched_fit": {
+    "thresholds": [3.0, 2.0, 1.0, 0.5, 0.2, 0.1],
+    "quantity": "4184 unflipped TRAIN dual cross-entropy",
+    "selection": "First accepted optimizer iterate including step0 below each threshold; no interpolation, NOT_REACHED retained",
+    "held_use": "Evaluate retained snapshots only after optimization ends; never select a point using held",
+    "stop_rule": false,
+    "limit": "Matching mean TRAIN CE does not equalize margins, objective, compute or optimization history"
+  },
+  "report": {
+    "primary_metric": "Fixed69-class held Macro-F1 at certified regularized optimum",
+    "auxiliary": ["Unflipped TRAIN F1/CE", "Augmented TRAIN CE", "Held accuracy/NLL", "Gradient norm and certified gap", "Matched TRAIN-CE snapshots", "Iterations and runtime"],
+    "contrasts": "Within each original training seed, encoder-source effect conditioned on map, map effect conditioned on source, and difference-in-differences",
+    "limits": ["Two encoder-training seeds reuse the same already viewed1046 held images", "Exploratory conditional regularized linear readability, not pure representation-versus-optimization causal mediation", "New affine head family is broader than constrained SPD-prototype heads", "No automatic method promotion, extra lambda, seed, learning rate or future window", "Nonconvergence is reported, not discarded", "No publication-tier or acceptance-probability guarantee"]
+  },
+  "runtime": {
+    "device": "CPU only, CUDA_VISIBLE_DEVICES=-1",
+    "threads": 2,
+    "inner_per_cell_seconds": 600,
+    "outer_per_cell_seconds": 660,
+    "summary_inner_seconds": 120,
+    "summary_outer_seconds": 180,
+    "new_finite_cpu_window_seconds": 7200,
+    "old_windows_unchanged": true,
+    "no_recurring_automation": true,
+    "no_restart_resume_or_overwrite": true
+  }
+}

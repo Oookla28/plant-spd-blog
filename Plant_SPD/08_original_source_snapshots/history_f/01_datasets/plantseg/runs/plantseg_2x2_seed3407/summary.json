@@ -1,0 +1,121 @@
+{
+  "status": "COMPLETE_STAGE1_ONE_SEED",
+  "audit": {
+    "status": "COMPLETE",
+    "stage": "full",
+    "manifest_sha256": "ba5a8afffa3614aafe2512e9941a12181f9c7e2f14004368a7d8ba690a5441dc",
+    "manifest_counts": {
+      "train": 5230,
+      "val": 800,
+      "test": 1447
+    },
+    "source_sha256": "dcc648a5cbddfba470edcd7af44214cae75371a670cbc34d423aaec2cc2505a2",
+    "protocol_sha256": "7e2bc9e4bf5b4df0e30b9c0158e96a7ab8f722fd62ac8d9379ad9201824688bd",
+    "mask_source": "oof_predicted_soft_mask",
+    "mask_images": 6030,
+    "mask_cache_sha256": "0406f11376925037faea4773b8dc6b5098ac21f1ef076addcb0cb8bcd2b5e685",
+    "oof_folds": 5,
+    "oof_epochs": 1,
+    "intervention_rows": 5230,
+    "intervention_manifest_sha256": "5fd19e19152979b75e3323964ac8426c8263b425f42bd04960c817ad2f696169",
+    "test_accessed": false,
+    "geometry": {
+      "euclidean": "sqrt2_upper_triangle(C)",
+      "spd": "full_log(C)=Ulog(lambda)U^T"
+    },
+    "hyperparameters": {
+      "gamma": 0.05,
+      "epsilon": 0.0001,
+      "feature_dim": 16,
+      "mask_alpha": 0.6,
+      "lambda_bg": 0.25,
+      "lambda_lesion": 0.25,
+      "margin": 0.1
+    },
+    "smoke": {
+      "logits_shape": [
+        2,
+        69
+      ],
+      "cov_shape": [
+        2,
+        16,
+        16
+      ],
+      "min_eigenvalue": 0.15765677392482758,
+      "finite": true,
+      "grad_finite": true
+    }
+  },
+  "cells": {
+    "E0": {
+      "cell": "E0",
+      "metrics": {
+        "accuracy": 0.16875,
+        "macro_f1": 0.07331679869180792,
+        "balanced_accuracy": 0.09082402458353754,
+        "nll": 3.437654972076416,
+        "ece": 0.05630466861650348,
+        "brier": 0.013626575784946018
+      },
+      "bg_kl": 0.017495177686214447,
+      "lesion_logit_drop": -0.6327042579650879,
+      "runtime_sec": null,
+      "resumed_from_saved": true
+    },
+    "E1": {
+      "cell": "E1",
+      "metrics": {
+        "accuracy": 0.16125,
+        "macro_f1": 0.07854499817635009,
+        "balanced_accuracy": 0.10988438620979137,
+        "nll": 3.481255531311035,
+        "ece": 0.016124949995428326,
+        "brier": 0.013611100564444223
+      },
+      "bg_kl": 0.02013546973466873,
+      "lesion_logit_drop": 0.5096738338470459,
+      "runtime_sec": null,
+      "resumed_from_saved": true
+    },
+    "S0": {
+      "cell": "S0",
+      "metrics": {
+        "accuracy": 0.24,
+        "macro_f1": 0.1452896904368541,
+        "balanced_accuracy": 0.15768136470284072,
+        "nll": 3.051553249359131,
+        "ece": 0.03046858455985784,
+        "brier": 0.012856834717007994
+      },
+      "bg_kl": 0.016989663243293762,
+      "lesion_logit_drop": 15.29168701171875,
+      "runtime_sec": null,
+      "resumed_from_saved": true
+    },
+    "S1": {
+      "cell": "S1",
+      "metrics": {
+        "accuracy": 0.25125,
+        "macro_f1": 0.14622322319810072,
+        "balanced_accuracy": 0.1629983260859932,
+        "nll": 3.0967462062835693,
+        "ece": 0.04100760784000157,
+        "brier": 0.012915393334983203
+      },
+      "bg_kl": 0.020094744861125946,
+      "lesion_logit_drop": 7.684866905212402,
+      "runtime_sec": null,
+      "resumed_from_saved": true
+    }
+  },
+  "interaction": {
+    "interaction_accuracy_mean": 0.01875,
+    "interaction_accuracy_ci95": [
+      -0.0175,
+      0.05625
+    ],
+    "bootstrap_reps": 5000,
+    "bootstrap_seed": 3407
+  }
+}

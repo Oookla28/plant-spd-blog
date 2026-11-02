@@ -1,0 +1,27 @@
+{
+  "status": "FROZEN_BEFORE_RECOVERY3_FITTING",
+  "human_authorization": "2026-10-26 direct request to repair supervision and fill the missing3 cells",
+  "scope": "Only3 distinct new runIDs; five accepted originals reused byte-for-byte and original failed sixth preserved",
+  "science_unchanged": "Frozen encoders/cache/scalers/oldcore b4b250/zero initialization/two true flips/CEdual+.25two-view CE/all-weight-and-bias L2/CPU2/full-gradient acceptance",
+  "lambda": 1.251525252518626e-08,
+  "gradient_l2_tolerance": 1e-06,
+  "maxiter": 1500,
+  "inner_outer_sec": [
+    600,
+    660
+  ],
+  "summary_inner_outer_sec": [
+    120,
+    180
+  ],
+  "new_finite_window_sec": 2400,
+  "old_window_remains_closed": true,
+  "new_attempt_of_old_failed_tuple": "The old3408RawRaw failed infrastructure attempt remains preserved; the new identified attempt is explicitly requested now and is not a reset/restart of the old batch",
+  "no_retry_within_recovery": true,
+  "claims": [
+    "TRAIN fit100% is not representation or generalization ceiling",
+    "Two seeds share same already viewed1046 held images",
+    "No pure causal mediation/first-discovery/venue guarantee",
+    "Do not stop or select fits using held performance"
+  ]
+}

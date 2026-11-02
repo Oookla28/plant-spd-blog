@@ -1,0 +1,288 @@
+{
+  "status": "FROZEN_INFRASTRUCTURE_CONTINUATION_NOT_LAUNCHED",
+  "utc": "2026-10-25T11:10:59.732457+00:00",
+  "root": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1",
+  "metadata_backup_root": "C:\\Users\\lenovo\\Documents\\PlantSPD_optimizer_geometry_control_v1_20261025_recovery1_live_metadata",
+  "gpu_python": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\gpu_env\\Scripts\\python.exe",
+  "runner_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\runner_opt_recovery_v1.py",
+  "controller_sha256": "a8c38e295bb19427fc4972cbd8562c347269b6d3a5e42bd9a0a2346e8e0acad3",
+  "analyzer_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\analyze_opt_v1.py",
+  "analyzer_sha256": "55bdf9c4290f5d4679a24a59b37d3dfd744de87f5ab3fa4309d1b4d0fdc9daa2",
+  "cpu_python": "C:/Users/lenovo/AppData/Local/Programs/Python/Python311/python.exe",
+  "window_path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\WINDOW.json",
+  "window_sha256": "74c72c4ab8b8942995697b430929e2f6d5925ededfcdd29c29199f2cf28ddb4e",
+  "physical_gpu_uuid": "GPU-3ea4a0ed-f98c-1bf6-a474-36c3604e158e",
+  "runs": [
+    {
+      "run_id": "ogcv1_p0_s3407_raw_standard_global",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\protocols\\ogcv1_p0_s3407_raw_standard_global.json",
+      "protocol_sha256": "8b6f710595f35038936bdad006a1df5ec11874416367f589cfecc8b9e856596f",
+      "carryover": true,
+      "completion_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\runs\\ogcv1_p0_s3407_raw_standard_global\\COMPLETED.json",
+      "completion_sha256": "74c7b8b695d0c52ec801da27e3e37d996bd5f50ccc21efdfe9e782c2823fbe93"
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3407_log_standard_global",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3407_log_standard_global.json",
+      "protocol_sha256": "393f26af5870069d5054fc721b3856a6263b33d1c7154ad0d24023f325453980",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3408_log_standard_global",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3408_log_standard_global.json",
+      "protocol_sha256": "ef04e8daadd791b91a1f6436e921bcc7b0efcae2a8ece558c9c34bf187bec6ec",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3408_raw_standard_global",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3408_raw_standard_global.json",
+      "protocol_sha256": "eb0c54611155469b15193c4f18c20e40589d392e6c7569313db182cd57bd2889",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3407_log_lower_global",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3407_log_lower_global.json",
+      "protocol_sha256": "77b7f05ca57e83d22f7c12e4dd380549ade2f3ed83a9cae41cf3d2f04a23e9ae",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3407_raw_lower_global",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3407_raw_lower_global.json",
+      "protocol_sha256": "317a93ea73ac690538993c591d9b2084a694c980e9fdbdd15a64eeeb34934546",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3408_raw_lower_global",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3408_raw_lower_global.json",
+      "protocol_sha256": "5e2e20a4342b9ca29855d57da9fc54417bc5cd0f98a446146879929f89ca83b9",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3408_log_lower_global",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3408_log_lower_global.json",
+      "protocol_sha256": "d13a8e6b24b5a8dc3805cb77edb408ea8fa1e01f3a97cad3f86ea0351806c96c",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3407_raw_standard_block",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3407_raw_standard_block.json",
+      "protocol_sha256": "b61caf7382973083f0c01c3adceb3cac9d46a6f90f685d9577e10941768b6e9a",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3407_log_standard_block",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3407_log_standard_block.json",
+      "protocol_sha256": "7a2eac24cf288d1ab30508a3275230d83c2e634ebb80bebbe0c48550d15a9c19",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3408_log_standard_block",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3408_log_standard_block.json",
+      "protocol_sha256": "555e22678f2439d8a4c987ad0798f588ef0f7f13aa2f587333adf270bed8c22a",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3408_raw_standard_block",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3408_raw_standard_block.json",
+      "protocol_sha256": "7fd39288be0e337f8304ad3ac07e94a7ad956099573b3c7cbab1424cc1cfd02f",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3407_log_lower_block",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3407_log_lower_block.json",
+      "protocol_sha256": "133c62ea15f6de3c460d8aa3ae7b30ea8f5a927ed95af71278bad2f606b11b00",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3407_raw_lower_block",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3407_raw_lower_block.json",
+      "protocol_sha256": "b70ddd57210c9b53d56fe43e89c33ca206d1a4f6c3a1220c30aa9fcb1ffa2d4c",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3408_raw_lower_block",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3408_raw_lower_block.json",
+      "protocol_sha256": "c3c0cddcaef9681a6b7d72a1f072158178e1d2685ec5568ff4fc9309378a59de",
+      "carryover": false
+    },
+    {
+      "run_id": "ogcv1r1_p0_s3408_log_lower_block",
+      "protocol_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\protocols\\ogcv1r1_p0_s3408_log_lower_block.json",
+      "protocol_sha256": "bd47c8440f85928eec04392bf0d2d5b73f9df1335ca037f763a4c02b1953404e",
+      "carryover": false
+    }
+  ],
+  "frozen_files": [
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\input\\rgb_views_uint8.npy",
+      "sha256": "03c781736e5b87f71593bb2b68a4498227b1c7643c2015e9f5925f4dc876cbb8"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\input\\meta.npz",
+      "sha256": "6405a2608dec434161214a251245d49b647777e61bdd6c166a450b42d0f98d09"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\prepared\\SPLITS.npz",
+      "sha256": "a6e9affa58a99be93fd5747e4b7f1e267655d27dd49d7431c53bb6339d7caf6b"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\prepared\\STREAMS.npz",
+      "sha256": "3f89aa25b626ead7d73a7ac77f9ad8d72e7d0846d648cc5e1ae7d5ff0b47049e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\assets\\resnet18_torch_only_v1.py",
+      "sha256": "cb560556ff5f0c659ed4c4422d2a5b932470e1c3185f57cd741bf3ec054797ad"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\assets\\resnet18-f37072fd.pth",
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\source\\runner_opt_v1.py",
+      "sha256": "f8b1abedae80dd93e1971ba6210d52362c8baef3994eda680fb3d55facdd105a"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\source\\controller_opt_v1.py",
+      "sha256": "b09411f9e877045f06ec1595c59311da64ef13ae769d2f985a64d6d3ae3256a7"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\source\\analyze_opt_v1.py",
+      "sha256": "55bdf9c4290f5d4679a24a59b37d3dfd744de87f5ab3fa4309d1b4d0fdc9daa2"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\source\\prepare_opt_v1.py",
+      "sha256": "7144a0d7b49c03bd485fe83ff6c833e6d628ec96ea43cd402cacdbc6e5c7a1b1"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\contracts\\CPU_CONTRACTS.json",
+      "sha256": "032836f5a43c50dd7d3b1f926cc68919f04b19a133322e6e04a222396adf96be"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\WINDOW.json",
+      "sha256": "74c72c4ab8b8942995697b430929e2f6d5925ededfcdd29c29199f2cf28ddb4e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\source\\runner_v2.py",
+      "sha256": "d736dc0541a89b39c6485b376d37d9abc659e2ac3d2ea42283023c4e9f84b3bd"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\CONTROLLER_END.json",
+      "sha256": "64eaa2ab1fb3e8d71a128c95641cf122e33933d6cc438db3c5bd1dc2a7426d1b"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\PAIRED_TRAINING_RESULTS.json",
+      "sha256": "163f2358adbd545020a882436fe3597d282dcb57f11401f8f71e54c400f63026"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\PREREGISTRATION_ZH.txt",
+      "sha256": "ac89d47c54caee923263058b29360d7a8c96d075e42985a1c7e778bebe743b05"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\contracts\\CONTROLLER_CONTRACTS_FINAL_PASS.json",
+      "sha256": "859bb7cc0683bf1b67729e558c775e6de40b12fd64ec724930b2906dab4796ec"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\admission\\gpu_smoke_log_lower_block\\SYNTHETIC_SMOKE.json",
+      "sha256": "65e169aec7bd7697c14346bec835bb47dc41dc3b43f6392a605b5521edf2356e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\admission\\GPU_END.json",
+      "sha256": "92d0f1b1a417e1576445333465150b44fb322f67e38422ab1802b06290749786"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\tests\\test_optimizer_control_v1.py",
+      "sha256": "4011469f7c69a6264bd59c92a56515b8fd204ca6cb6c9e295617a182b4b0f0ae"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\tests\\test_controller_contract_v1.py",
+      "sha256": "cebd15cc3bba5d5df25add9c32c6360d514383a14ab3c7bed6b8fa82d4aa4617"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\initializations\\INIT_p0_s3407.npz",
+      "sha256": "df9869de40e7eaa257d0a5629a973df3945fc26c375a1a8a03e5264359a7bc87"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\initializations\\INIT_p0_s3408.npz",
+      "sha256": "57e549b7b11e329ec4e683cc0768cc200145a0c18ce35365de38c57af3f14a0d"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\runner_opt_recovery_v1.py",
+      "sha256": "bc839e7b1a8d34b661f8e236fa746987dd4b062e588e29d064f6763ab1fd117d"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\controller_opt_recovery_v1.py",
+      "sha256": "a8c38e295bb19427fc4972cbd8562c347269b6d3a5e42bd9a0a2346e8e0acad3"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\analyze_opt_v1.py",
+      "sha256": "55bdf9c4290f5d4679a24a59b37d3dfd744de87f5ab3fa4309d1b4d0fdc9daa2"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\prepare_recovery_control_v1.py",
+      "sha256": "4a16c8ffe109df03eb4d6d68768b54649f70eabe778ef7960d9077de5c981082"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\AMENDMENT_ZH.txt",
+      "sha256": "26fbbb2165b53bb75fc9a010f4e0fc916a261e62bd711439107e7f08f7d5ad79"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\contracts\\CPU_CONTRACTS.json",
+      "sha256": "68e85692a197fd5e05ae21a658b1a1b0dd8fd30d49a69a9215545515cfe461e9"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\contracts\\HANDLE_CONTRACTS.json",
+      "sha256": "d98b3cb72cb4fcda40f761b7fe8364de550220a4a5648604959db836e5fa3ea1"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\contracts\\SOURCE_DERIVATION_PROOF.json",
+      "sha256": "191ce838d1604006dce9c724ac00dd90be94e1be8a0e53b56c341ae721ccb8c2"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\INFRASTRUCTURE_STOP_RECEIPT.json",
+      "sha256": "7c1480f838c829c2ebc9ccbcddb3a961e5a341fa76d248b661a0b9906c9d5636"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Documents\\PlantSPD_optimizer_geometry_control_v1_20261025_live_metadata\\guardian\\guardian_v1.py",
+      "sha256": "3fee49e1a06f9f68e90096adcaa3fd4f291657a7efffbfc7a6731475a6c01535"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Documents\\PlantSPD_optimizer_geometry_control_v1_20261025_live_metadata\\guardian\\FORMAL_SPEC.json",
+      "sha256": "4577ee3bc727a66fb92da4044471acf9465bc4b3d245567565c499c54a63b1e2"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Documents\\PlantSPD_optimizer_geometry_control_v1_20261025_live_metadata\\guardian\\FORMAL_LAUNCH.json",
+      "sha256": "dc8f7210968ebd185d6f8bbe4afb67b7edd23e7bdd669ad7891a1f213b1d2793"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Documents\\PlantSPD_optimizer_geometry_control_v1_20261025_live_metadata\\guardian\\formal.stderr.log",
+      "sha256": "0287a00892ab460040ed42322f4aefaebc8a4205f9ff95ae9beecfc508b88eb4"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Documents\\PlantSPD_optimizer_geometry_control_v1_20261025_live_metadata\\guardian\\own_child_test_20261025T105548431591Z\\RESULT.json",
+      "sha256": "acee00595ca6608289d11487bc3c3960ab1eb175d76e4eb1c4cc2af13cbcd161"
+    }
+  ],
+  "design": "Raw/Log x LR{1,.3} x normclip{global5,two_groups5/sqrt2} x seeds3407/3408; partition0 fixed by index",
+  "primary": "fixed69 held Macro-F1; all16 fixed20epoch endpoints, no best-model or best-condition selection",
+  "secondary": [
+    "held CE/ECE15/Brier",
+    "pre/post group gradients and clip coefficients",
+    "sampled actual AdamW group parameter updates",
+    "within-seed LR/clip interactions and Log-minus-Raw differences"
+  ],
+  "scope_limits": [
+    "Already examined original TRAIN-pool held subset; exploratory, not new final test.",
+    "Two target-training seeds only; no population significance or novelty claim.",
+    "Split norm caps preserve combined gradient norm<=5 but alter direction and can underuse total budget.",
+    "Global gradient norm cap is not a bound on the AdamW parameter update.",
+    "Lower LR need not reduce raw gradient norm or clipping frequency.",
+    "Original20 results and all previous failures immutable; no new data/labels/ROI/masks/modules.",
+    "No extension of original main/hard deadlines; no retry/resume/new window.",
+    "One complete Raw baseline is carried by immutable output hashes;15 remaining cells use clean same-initialization runs with newIDs.",
+    "Original Log baseline attempt was interrupted by added external WindowsJob guard; preserve its partial visits/cost and do not count as a completed seed.",
+    "No external Job assignment is used in this continuation. Actual payload descendant handles plus independent no-I/O self-timeout enforce bounded ownership."
+  ],
+  "carryover_count": 1,
+  "original_control_manifest_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025\\MANIFEST.json",
+  "original_control_manifest_sha256": "aece01fd4b0d57b1f31c74bafc05d3a0cdc09779b6c540fd97776e2e9b34648b"
+}

@@ -1,0 +1,74 @@
+{
+  "status": "COMPLETE_WITH_HELD_METHODS",
+  "scope": "frozen C0/S2 outputs; one seed; local train target and available development rows",
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "elapsed_seconds": 335.20059275627136,
+  "counts": {
+    "train_used": 3917,
+    "val_available": 787,
+    "val_manifest_target": 904,
+    "missing_train": 65,
+    "missing_val": 13
+  },
+  "methods": {
+    "C0": {
+      "status": "COMPLETE",
+      "classification_top1": 0.7611181735992432,
+      "mask_iou_mean": 0.5998200637299782
+    },
+    "S2": {
+      "status": "COMPLETE",
+      "classification_top1": 0.8017789125442505,
+      "mask_iou_mean": 0.6028330608765421
+    },
+    "equal": {
+      "status": "COMPLETE",
+      "classification_top1": 0.8081321716308594,
+      "mask_iou_mean": 0.6214155111375583
+    },
+    "fixed_weight": {
+      "status": "COMPLETE",
+      "classification_top1": 0.804320216178894,
+      "mask_iou_mean": 0.6144767488394964
+    },
+    "euclidean_gate": {
+      "status": "COMPLETE",
+      "classification_top1": 0.8017789125442505,
+      "mask_iou_mean": 0.6139385112312183
+    },
+    "feature_concat": {
+      "status": "COMPLETE",
+      "classification_top1": 0.7700126767158508,
+      "mask_iou_mean": null
+    },
+    "attention_fusion": {
+      "status": "HELD",
+      "reason": "requires separately trained attention head under the same end-to-end budget"
+    },
+    "spd_only": {
+      "status": "HELD",
+      "reason": "current checkpoint export lacks intermediate feature tensors for SPD descriptors"
+    },
+    "shapley_only": {
+      "status": "HELD",
+      "reason": "requires a pre-registered coalition value and OOF coalition outputs"
+    },
+    "spd_plus_fusion": {
+      "status": "HELD",
+      "reason": "depends on SPD and coalition APIs"
+    }
+  },
+  "fixed_weight_on_S2": 0.6499999761581421,
+  "limitations": [
+    "feature_concat is a trained classifier on frozen logits, not end-to-end fusion",
+    "attention, SPD, Shapley and full CRCG require separate preregistered training/interface work",
+    "calibration and final manifests were not opened",
+    "single seed; local development rows may be fewer than 904"
+  ],
+  "checkpoints": {
+    "c0": "f2d148d1577897bbf24d94463080f8b132f6f7428b240e569785092e83fa7cdd",
+    "s2": "d99dfd37f15ea6478e139ffcf79381805de6242ab549cd552b705f433409618a"
+  },
+  "source_script_sha256": "ce8ce5bbdaf8eaa9292a9e88d8f4de088453f3a11305043ec46179e52334c67f",
+  "result_sha256": "de387f0a00f4fd0f96baaad874e07a717163375bbbace7d732d1be7ae2ad9ed7"
+}

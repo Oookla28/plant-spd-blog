@@ -1,0 +1,235 @@
+{
+  "status": "COMPLETE",
+  "audit": "DES-AS-style exact coalition and algorithm-Shapley screening",
+  "protocol_sha256": "6b7ba0a06938511675bf887970aba498357a4aa137c05baf4cce37ce407a6db2",
+  "models": [
+    "unet",
+    "deeplabv3plus_r50",
+    "segformer_b2",
+    "efficientvit_fpn",
+    "efficientvit_mlp"
+  ],
+  "seeds": [
+    3408,
+    3409
+  ],
+  "images": 904,
+  "scope": "frozen DEV masks and existing prediction NPZ only; no RGB decode, training, GPU, CAL or FINAL",
+  "per_seed": {
+    "3408": {
+      "equal_five_weight": {
+        "weights": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "foreground_micro_iou": 0.6764696201172311,
+        "counts": [
+          7830077,
+          1460176,
+          2284660,
+          31081599
+        ]
+      },
+      "shapley_positive_weight": {
+        "weights": [
+          0.14827210073797023,
+          0.21384852981588118,
+          0.23006892901692638,
+          0.20081269715840813,
+          0.20699774327081408
+        ],
+        "foreground_micro_iou": 0.678549032861852,
+        "counts": [
+          7858047,
+          1465925,
+          2256690,
+          31075850
+        ]
+      },
+      "best_single_coalition_mask": 22,
+      "best_single_coalition_foreground_micro_iou": 0.6824637996869464
+    },
+    "3409": {
+      "equal_five_weight": {
+        "weights": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "foreground_micro_iou": 0.6762378741910562,
+        "counts": [
+          7846973,
+          1489128,
+          2267764,
+          31052647
+        ]
+      },
+      "shapley_positive_weight": {
+        "weights": [
+          0.1439712308750797,
+          0.21108612723042727,
+          0.23006257426050322,
+          0.2072428465169933,
+          0.20763722111699642
+        ],
+        "foreground_micro_iou": 0.6782846228118481,
+        "counts": [
+          7880559,
+          1503629,
+          2234178,
+          31038146
+        ]
+      },
+      "best_single_coalition_mask": 14,
+      "best_single_coalition_foreground_micro_iou": 0.6808590658990696
+    }
+  },
+  "shapley_values": {
+    "3408": {
+      "unet": 0.10030157166019857,
+      "deeplabv3plus_r50": 0.14466203372717754,
+      "segformer_b2": 0.15563464101285843,
+      "efficientvit_fpn": 0.13584368896146495,
+      "efficientvit_mlp": 0.14002768475553176
+    },
+    "3409": {
+      "unet": 0.09735879911163367,
+      "deeplabv3plus_r50": 0.142744433949527,
+      "segformer_b2": 0.15557702614884472,
+      "efficientvit_fpn": 0.1401454619699549,
+      "efficientvit_mlp": 0.14041215301109597
+    }
+  },
+  "cross_seed_transfer": [
+    {
+      "calibration_seed": 3408,
+      "evaluation_seed": 3409,
+      "weights": [
+        0.14827210073797023,
+        0.21384852981588118,
+        0.23006892901692638,
+        0.20081269715840813,
+        0.20699774327081408
+      ],
+      "equal_foreground_micro_iou": 0.6762378741910562,
+      "weighted_foreground_micro_iou": 0.6782806930760832,
+      "delta_weighted_minus_equal_pp": 0.2042818885026998,
+      "paired_group_bootstrap": {
+        "groups": 864,
+        "replicates": 2000,
+        "delta_weighted_minus_equal_pp_mean": 0.20442205106628283,
+        "delta_weighted_minus_equal_pp_ci95": [
+          0.10970640940223514,
+          0.29065272784529445
+        ]
+      }
+    },
+    {
+      "calibration_seed": 3409,
+      "evaluation_seed": 3408,
+      "weights": [
+        0.1439712308750797,
+        0.21108612723042727,
+        0.23006257426050322,
+        0.2072428465169933,
+        0.20763722111699642
+      ],
+      "equal_foreground_micro_iou": 0.6764696201172311,
+      "weighted_foreground_micro_iou": 0.6784536194005398,
+      "delta_weighted_minus_equal_pp": 0.1983999283308724,
+      "paired_group_bootstrap": {
+        "groups": 864,
+        "replicates": 2000,
+        "delta_weighted_minus_equal_pp_mean": 0.1970227320486909,
+        "delta_weighted_minus_equal_pp_ci95": [
+          0.11602624043493714,
+          0.2789932713406545
+        ]
+      }
+    }
+  ],
+  "inputs": {
+    "unet_s3408": {
+      "run_id": "satv1_unet_train_s3408",
+      "status_sha256": "a0cb5d3e166f854ee03f8ffa53c9bb95cc86569a8f523381b9c96e75bbc0ddcc",
+      "metrics_sha256": "09dd9ceb14061470fad1952cda9becb5d3e1a6f5fc2babec706b0617362d92da",
+      "prediction_index_sha256": "011beef8d92b9e0924d3b1a35d036c8d4d1fbfc91e83ed1888618eb4f75c13cc",
+      "checkpoint_sha256": "eeded93ec9961c024a992db3560d93588dd1e8766feeab4e6cd6f08bc05c34f3"
+    },
+    "deeplabv3plus_r50_s3408": {
+      "run_id": "satv1_deeplabv3plus_r50_train_s3408",
+      "status_sha256": "c0cbb46390f18130a45e060895f1e3cf777b2556c9cafa8c95468fc5ba616dc7",
+      "metrics_sha256": "bc0e4479eaaab5d7ea20dddedabc671e419a84f808346bead73db23587982122",
+      "prediction_index_sha256": "f3033621ca0fcd67d43d8d96922611211cf6d4c44e531b0e6da8f7d62fdbe3e4",
+      "checkpoint_sha256": "7749b4f756b5cd866d056802778cd8f41406a2b9d25e843106e3c035302f7644"
+    },
+    "segformer_b2_s3408": {
+      "run_id": "satv1_segformer_b2_train_s3408",
+      "status_sha256": "6df12e3794a3b9c2be659d4995575f66db13b3f11ab8b9098565c66e0f4c6c38",
+      "metrics_sha256": "73a6c9475174a4426d9e8b91b6d27bd49c61ca762cd969f807cb36a8d22cfd43",
+      "prediction_index_sha256": "4311db68e786f0634bda0097dd27833e0469a1b67c0af427a8499c1c8cbb43ca",
+      "checkpoint_sha256": "9ad5b8eb153b5467286fc8097cc353f322abce65a0bb3c9a2290c378539e47f0"
+    },
+    "efficientvit_fpn_s3408": {
+      "run_id": "satv1_efficientvit_fpn_train_s3408",
+      "status_sha256": "f78e73e34186f88c23be25724529eea6a7732252da673a1e296f1e22345b6d7f",
+      "metrics_sha256": "f111b92c4c595cb0129b36579110a77a8a7685857452871f2f68ae3d61155c15",
+      "prediction_index_sha256": "965e93d83dd3718ef7794c3a2adbda5f9c172fa1c84657169aac1273e3ee1d7b",
+      "checkpoint_sha256": "3ae4e7954e005eea8684183a0474a9e6ad917d4d619eb4a057958727c36d4a24"
+    },
+    "efficientvit_mlp_s3408": {
+      "run_id": "satv1_efficientvit_mlp_train_s3408",
+      "status_sha256": "1de9e1469cfa9c220297fbf8df1d10dd5230df86c9492ac68ea7854166c03e65",
+      "metrics_sha256": "c7705ae65eedd86e2d75592c99ea8cf640c173e332c02b47a57c74d0a0797b1b",
+      "prediction_index_sha256": "7e6da6a896568beeb18a8c44b1eb0278c55f54e0d0ce626a0fcdc363aabb3fae",
+      "checkpoint_sha256": "66f268b457eb946a9dff51855aa1ad0ca46da78118cd7bd6b7cbf84b1c5ff92d"
+    },
+    "unet_s3409": {
+      "run_id": "satv1_unet_train_s3409",
+      "status_sha256": "b0cbf18fb3538048c02f1964435bc363b3c949c55c9e7cbf6ff3d765f8c242c8",
+      "metrics_sha256": "b609ab8c565e6c280bdad1a984b6112dac0cef1be473b7815d6df6646b89a2b1",
+      "prediction_index_sha256": "510967654d228e56a46516df679d4a90a4859dba2f8687943fada419b4c4ee02",
+      "checkpoint_sha256": "c1b26765f7199a30de1cee9c7c57ae1426f32bffce8283bb94e5fe675ee1266c"
+    },
+    "deeplabv3plus_r50_s3409": {
+      "run_id": "satv1_deeplabv3plus_r50_train_s3409",
+      "status_sha256": "f019455cf98d74a49622ad1d74db3ddc29083a015382da4a35f832f128ed3c1d",
+      "metrics_sha256": "8aaf3359ee983d1b12e15f8001f58dd19a71fbb26b9cfee2fe732d8557197081",
+      "prediction_index_sha256": "70864d4fa8f7c44a5e77616ee30b2c7c58bab1f4001b1944de82fd26d0c65596",
+      "checkpoint_sha256": "1b0600fd3e88765c897029394084b18c615843613f59452f9bec89f1c0ba57a7"
+    },
+    "segformer_b2_s3409": {
+      "run_id": "satv1_segformer_b2_train_s3409",
+      "status_sha256": "5ed5d802aa0ac3db5d225a01dd30cf0dfb45471f2ce2f003a040e4b9e8d1372d",
+      "metrics_sha256": "cf5b339751030bd837cf39ea048cc96e92ef89e2e41bae05191b0b925a4d90d0",
+      "prediction_index_sha256": "0f8d75ec25805958cbb942c6f3285987e0e6c964e83cf88e8feeb74f9db791ce",
+      "checkpoint_sha256": "bf490274f59838c34ad4dcdee6cb094db84c570ea38c86478c0f9548afa41ec0"
+    },
+    "efficientvit_fpn_s3409": {
+      "run_id": "satv1_efficientvit_fpn_train_s3409",
+      "status_sha256": "0b6011d9609d78475203d2249060578e782f4dc7b3946e7a20c3ba7d057d163c",
+      "metrics_sha256": "12e14d041004ca526bb1473f5bc95cb0c934c6f436177412fe2279d76694e7fc",
+      "prediction_index_sha256": "297023aca9adebb012efe76986bb90b333c56024b44dbd6520aee0d623eff529",
+      "checkpoint_sha256": "55dc79fc7957a068fd2d048e19544571b6aaa40559c471a7b2adc68eb23e8e25"
+    },
+    "efficientvit_mlp_s3409": {
+      "run_id": "satv1_efficientvit_mlp_train_s3409",
+      "status_sha256": "0dc24fc87e772c28945f6cc8d0d2e8ad5b0f9142b4d4ac401fbf70ca8fcfa2dd",
+      "metrics_sha256": "3522fd503315896d1e999fe3df0d759aaf82c34d10128f44928d1f63399ed371",
+      "prediction_index_sha256": "7d8d18d3ebc0d9450f6a1756f3629401ace4e864ddc07e8063287c9ee1fd6ea8",
+      "checkpoint_sha256": "926e8e714b32e8de9702ab74285e8d91acc557fefe12d5c40feb5c8e337f1bc1"
+    }
+  },
+  "limitations": [
+    "Only seeds 3408 and 3409 are complete for all five models; this is a two-seed screening audit.",
+    "Positive-Shapley weights are calibrated offline; no online compute saving or per-image dynamic selector is claimed.",
+    "904 DEV images have been used repeatedly for model decisions; no FINAL labels were opened.",
+    "DES-AS is prior art; this audit is a transparent baseline transfer, not an originality claim."
+  ],
+  "result_sha256": "8c46b9d4416ab25c024c521d00ee47ced9307ca7824d859965cb0f9fec50c878"
+}

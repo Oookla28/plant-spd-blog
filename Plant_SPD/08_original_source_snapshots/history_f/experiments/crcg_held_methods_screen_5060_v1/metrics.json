@@ -1,0 +1,57 @@
+{
+  "status": "COMPLETE",
+  "scope": "frozen held-method screen; one seed; 3917 train and locally available 787 dev; no cal/final",
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "elapsed_seconds": 371.00049567222595,
+  "counts": {
+    "train_used": 3917,
+    "val_available": 787,
+    "missing_train": 65,
+    "missing_val": 13
+  },
+  "methods": {
+    "shapley_only": {
+      "classification_top1": 0.8081321716308594,
+      "mask_iou_mean": 0.6013265623032601,
+      "weight_on_S2": 0.5
+    },
+    "spd_only": {
+      "classification_top1": 0.804320216178894,
+      "mask_iou_mean": 0.6023304291496694,
+      "weight_mean": 0.8590815918980267
+    },
+    "attention_fusion": {
+      "classification_top1": 0.804320216178894,
+      "mask_iou_mean": 0.6074809253422686,
+      "weight_mean": 0.73285938595366,
+      "implementation": "trainable confidence attention scalar; frozen-output screen"
+    },
+    "spd_plus_fusion": {
+      "classification_top1": 0.8055908679962158,
+      "mask_iou_mean": 0.6076560244988817,
+      "weight_mean": 0.7431114626743061,
+      "implementation": "ordinary gate plus Log-Euclidean distance feature"
+    }
+  },
+  "shapley_coalition": {
+    "v_global": -0.09792016010467272,
+    "v_local": -0.05266533489264409,
+    "v_equal": -0.05257626904363855,
+    "phi_global": -0.048915547127833595,
+    "phi_local": -0.003660721915804962
+  },
+  "limitations": [
+    "SPD uses Log-Euclidean prototype distances on frozen C0 deepest FPN and S2 semantic stride4 maps; not an end-to-end Riemannian layer",
+    "attention is a scalar confidence-attention screen, not the final end-to-end architecture",
+    "Shapley-only is a train-only static two-player prior baseline",
+    "single seed and 787 available dev rows",
+    "full CRCG end-to-end is not run here",
+    "calibration and final manifests were not opened"
+  ],
+  "checkpoints": {
+    "c0": "f2d148d1577897bbf24d94463080f8b132f6f7428b240e569785092e83fa7cdd",
+    "s2": "d99dfd37f15ea6478e139ffcf79381805de6242ab549cd552b705f433409618a"
+  },
+  "source_script_sha256": "e8a358ffd10914e6fc9796497f0d6f50d9cd223d99917d45d9c5efb0a23d9b97",
+  "result_sha256": "39fe2e4dc518deafdf55fab144bd5003ed12a0767dfe27ac2d21c48a9796710d"
+}

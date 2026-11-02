@@ -1,0 +1,248 @@
+{
+  "status": "FROZEN_SINGLE_FINITE_EIGHT_HEAD_BATCH",
+  "execution_authorized": true,
+  "root": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025",
+  "metadata_backup_root": "C:\\Users\\lenovo\\Documents\\PlantSPD_representation_head_cross_v1_20261025_live_metadata",
+  "plan_path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\PLAN.json",
+  "plan_sha256": "096b1d8eb5353ec0bb48acf770a3861e1583bdcb2fcd75b824715e0679edc5d8",
+  "window_path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\EXECUTION_WINDOW.json",
+  "window_sha256": "b9b386fbe99f1c8059aa04c3a18ebfbdc2ffcd13c249703d32b712daeed6c048",
+  "controller_path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\cross_controller_v1.py",
+  "controller_sha256": "7cbfd76c199fa383b557abde0638bd21a4482a8a086477bc16980fc6799d3609",
+  "extractor_path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\extract_cross_cache_v1.py",
+  "extractor_sha256": "e4e340dd9331f949ce928d05b6d6c204170948ab04efe4410d8f618c66c5ff43",
+  "trainer_path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\train_cross_head_v1.py",
+  "trainer_sha256": "2f637f7d7100c8fbab80d3c4451cfad17054e668c0f44bd4ffc89a44c69d339b",
+  "model_path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\cross_model_v1.py",
+  "model_sha256": "3097a829d09d691940f5969cf25610775fe0724b1886fc01f03cbf28fa5ffdfb",
+  "run_id": "rhc1_fixed_four_encoder_cache",
+  "cache_output_path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\cache",
+  "cache_timeout_sec": 600,
+  "cache_batch_size": 32,
+  "cpu_threads": 4,
+  "gpu_python": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\gpu_env\\Scripts\\python.exe",
+  "cpu_python": "C:\\Users\\lenovo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "physical_gpu_uuid": "GPU-3ea4a0ed-f98c-1bf6-a474-36c3604e158e",
+  "main_deadline_utc": "2026-10-25T15:22:27.347644+00:00",
+  "gpu_hard_deadline_utc": "2026-10-25T15:32:27.347644+00:00",
+  "cpu_hard_deadline_utc": "2026-10-25T17:02:27.347644+00:00",
+  "ownership_source_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\controller_opt_recovery_v1.py",
+  "ownership_source_sha256": "a8c38e295bb19427fc4972cbd8562c347269b6d3a5e42bd9a0a2346e8e0acad3",
+  "supervisor_source_path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\addon_controller_v1.py",
+  "supervisor_source_sha256": "d6180a5013ac063f1094426708551062a218272a6270dfc86d0d55af8b4adce7",
+  "active_manifest_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\MANIFEST.json",
+  "active_manifest_sha256": "d37701d77132b9b8583f3b38f150b90bf298601e23308e3d44b18c7dd31bd628",
+  "active_end_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\CONTROLLER_END.json",
+  "active_controller_identity": {
+    "pid": 36628,
+    "creation_time_windows_filetime": 134374003188384493
+  },
+  "cpu_end_path": "D:\\PlantSPD_work\\calibration_geometry_audit_v1_20261025\\CPU_TEMPERATURE_END.json",
+  "sqrt_end_path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\ADDON_END.json",
+  "sqrt_end_sha256": "813366a65999ddb9b5466b2598379604a72013bd17f35ef9acac43bbba0f5bb4",
+  "sqrt_controller_identity": {
+    "pid": 70180,
+    "creation_time_windows_filetime": 134374058432817567
+  },
+  "selected_head_count": 8,
+  "no_retries_or_resume": true,
+  "source_review_sha256": "ff675ffda9b9c97f38db28c6c308c0d848eac32ae63ddd65689248b60d7cf620",
+  "frozen_files": [
+    {
+      "path": "D:\\PlantSPD_work\\calibration_geometry_audit_v1_20261025\\CPU_TEMPERATURE_END.json",
+      "sha256": "11f9511f52e0f07a3ae720b512c135b1fec5d775702ef8a57048308d03e64a62"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\CONTROLLER_END.json",
+      "sha256": "0f71eed65016b94b4a14c7723cdc0db778f37f76b2ae29fbc9371544a53437e2"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\MANIFEST.json",
+      "sha256": "d37701d77132b9b8583f3b38f150b90bf298601e23308e3d44b18c7dd31bd628"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\controller_opt_recovery_v1.py",
+      "sha256": "a8c38e295bb19427fc4972cbd8562c347269b6d3a5e42bd9a0a2346e8e0acad3"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\WINDOW.json",
+      "sha256": "74c72c4ab8b8942995697b430929e2f6d5925ededfcdd29c29199f2cf28ddb4e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\assets\\resnet18-f37072fd.pth",
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\assets\\resnet18_torch_only_v1.py",
+      "sha256": "cb560556ff5f0c659ed4c4422d2a5b932470e1c3185f57cd741bf3ec054797ad"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\initializations\\INIT_p0_s3407.npz",
+      "sha256": "df9869de40e7eaa257d0a5629a973df3945fc26c375a1a8a03e5264359a7bc87"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\initializations\\INIT_p0_s3408.npz",
+      "sha256": "57e549b7b11e329ec4e683cc0768cc200145a0c18ce35365de38c57af3f14a0d"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\input\\meta.npz",
+      "sha256": "6405a2608dec434161214a251245d49b647777e61bdd6c166a450b42d0f98d09"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\input\\rgb_views_uint8.npy",
+      "sha256": "03c781736e5b87f71593bb2b68a4498227b1c7643c2015e9f5925f4dc876cbb8"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\prepared\\SPLITS.npz",
+      "sha256": "a6e9affa58a99be93fd5747e4b7f1e267655d27dd49d7431c53bb6339d7caf6b"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\prepared\\STREAMS.npz",
+      "sha256": "3f89aa25b626ead7d73a7ac77f9ad8d72e7d0846d648cc5e1ae7d5ff0b47049e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\protocols\\pst1r1_p0_s3407_log.json",
+      "sha256": "fb4468bd2c9f9b8be116a8249070ad361d2c6e98c4cda8632a4da8953e9340a8"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\protocols\\pst1r1_p0_s3407_raw.json",
+      "sha256": "2a942aaef6bbc6b9f3790e2e6923530725e07a69b9f98c8898ac06c28036a2ae"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\protocols\\pst1r1_p0_s3408_log.json",
+      "sha256": "b1816c27098504461bac58e805176acd69bce8da645b0da77b0eef6a979805a0"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\protocols\\pst1r1_p0_s3408_raw.json",
+      "sha256": "d8e2da12474dffb96dd8d70227a06899b207f0ee0384d71c52899c837ed60539"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\runs\\pst1r1_p0_s3407_log\\COMPLETED.json",
+      "sha256": "204890b995e06fa2dc2acbd119fb3d85864e74957618f551594fb8ebfb44d456"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\runs\\pst1r1_p0_s3407_log\\FINAL_CHECKPOINT.pt",
+      "sha256": "76d18825c0f2fe113e8501781739d649c25ff3e5243d524d04356c330a216bc2"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\runs\\pst1r1_p0_s3407_raw\\COMPLETED.json",
+      "sha256": "b2e7037f16dc4227f5961f44852b89d0e2e3c29f4c9ee4edf5c55b233ae40d0d"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\runs\\pst1r1_p0_s3407_raw\\FINAL_CHECKPOINT.pt",
+      "sha256": "19bd4848d9f755e74c8bdab9d2f65531ef4c482b4fc94cbfbcd5afaf019e92cf"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\runs\\pst1r1_p0_s3408_log\\COMPLETED.json",
+      "sha256": "3427beba76c6f0b348c7c21cd7076d1ba3281c92f0394bc3261fe6cc092aaf1a"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\runs\\pst1r1_p0_s3408_log\\FINAL_CHECKPOINT.pt",
+      "sha256": "4b9d6063f9794c39356514ae37996f8de72c83c547ef74c4cf77f358c38aa009"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\runs\\pst1r1_p0_s3408_raw\\COMPLETED.json",
+      "sha256": "fd55386b78a5f0f572dc5b920e312423dccac332736124872821bcf13cb16737"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\runs\\pst1r1_p0_s3408_raw\\FINAL_CHECKPOINT.pt",
+      "sha256": "faede87d28fe9f1d19b70fa9c843871581d4c105da24b357b13f310f4c7ebf8e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\source\\runner_v2.py",
+      "sha256": "d736dc0541a89b39c6485b376d37d9abc659e2ac3d2ea42283023c4e9f84b3bd"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\EXECUTION_AMENDMENT_V1.json",
+      "sha256": "2ded4374eb7818449b3ce332085a3788a529e8f4636227fffcf85400f7c5ad25"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\EXECUTION_WINDOW.json",
+      "sha256": "b9b386fbe99f1c8059aa04c3a18ebfbdc2ffcd13c249703d32b712daeed6c048"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\PLAN.json",
+      "sha256": "096b1d8eb5353ec0bb48acf770a3861e1583bdcb2fcd75b824715e0679edc5d8"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\admission\\CACHE_CPU_CONTRACTS_TORCH211_V1.json",
+      "sha256": "0407f4be5d79048af01274da44efb96182f08115e7405268cda68ffab0e34eef"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\admission\\CACHE_SYNTHETIC_CONTRACTS_V1_FINAL2.json",
+      "sha256": "d19479a3b15f4ad54b0d01e932cae27f0de29dac59086cc191a5d5e0d0dfab6c"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\admission\\CONTROLLER_CONTRACTS_V1.json",
+      "sha256": "4c8d0d08e6498676de7988ef051bb89d745ade96af8e1c2ca9e49d08fa97922c"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\admission\\DESIGN_REVIEW.json",
+      "sha256": "99191ad3a304a86ff7cc12572907596fbb94348c9bf5239d4b11b09e4c63d478"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\admission\\FINAL_EXECUTION_REVIEW_TORCH211_V1.json",
+      "sha256": "ff675ffda9b9c97f38db28c6c308c0d848eac32ae63ddd65689248b60d7cf620"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\admission\\FINAL_EXECUTION_REVIEW_V1.json",
+      "sha256": "91c3a478266f2c8f634f01f23f8aa93f227822afa1d3de16377b642818f8d9b3"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\admission\\HEAD_CPU_SYNTHETIC_PERFORMANCE_TORCH211_V1.json",
+      "sha256": "e81a843bb604f4e6d17573e56dda618bcab58c6ad58555df19fcb88f86bb789b"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\contracts\\HEAD_CPU_CONTRACTS_TORCH211_FINAL_V1.json",
+      "sha256": "0115914fdaa4a0d646c78ecf3a1b6317f60d20ef40b8fb3893a3451781cce244"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\cross_controller_v1.py",
+      "sha256": "7cbfd76c199fa383b557abde0638bd21a4482a8a086477bc16980fc6799d3609"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\cross_model_v1.py",
+      "sha256": "3097a829d09d691940f5969cf25610775fe0724b1886fc01f03cbf28fa5ffdfb"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\extract_cross_cache_v1.py",
+      "sha256": "e4e340dd9331f949ce928d05b6d6c204170948ab04efe4410d8f618c66c5ff43"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\freeze_execution_v1.py",
+      "sha256": "df7918d5e2899cfb7cf5622c0cf487d074d6ba0d6f9e7eb1cd600c3381fd358a"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\source\\train_cross_head_v1.py",
+      "sha256": "2f637f7d7100c8fbab80d3c4451cfad17054e668c0f44bd4ffc89a44c69d339b"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\tests\\benchmark_cross_head_cpu_v1.py",
+      "sha256": "6700fe5b5f893cf2b820f6bc59888d01934011dd9630f09a44de119c4248d18a"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\tests\\test_cross_cache_v1.py",
+      "sha256": "99a3f3151a8fdd0a05a3fc83a78eeea4c94d78e3677c522d5c0eb3abeb5244b2"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\tests\\test_cross_controller_v1.py",
+      "sha256": "34354fcb9ffd4d430784ef6215ce8a50c957eae18627ae8070a1366ebb33a91c"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\representation_head_cross_v1_20261025\\tests\\test_cross_head_v1.py",
+      "sha256": "b223e39b16a4575f141ed24bd1394b320238ba761fa3226e9046b93cbf596446"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\ADDON_END.json",
+      "sha256": "813366a65999ddb9b5466b2598379604a72013bd17f35ef9acac43bbba0f5bb4"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\LAUNCH_RECEIPT.json",
+      "sha256": "77a47d5bf30c522d5b711ad34e1566f96f0764438bb35ee355954c81b0e462bb"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\addon_controller_v1.py",
+      "sha256": "d6180a5013ac063f1094426708551062a218272a6270dfc86d0d55af8b4adce7"
+    }
+  ]
+}

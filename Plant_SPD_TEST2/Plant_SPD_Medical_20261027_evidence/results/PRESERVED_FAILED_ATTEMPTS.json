@@ -1,0 +1,12 @@
+[
+  {
+    "path": "F:\\Plant_SPD_Medical_20261027\\attempts\\E01_0_3408_log_metadata_failure_attempt1\\FAILED.json",
+    "receipt": {
+      "error": "PermissionError(13, '拒绝访问。')",
+      "traceback": "Traceback (most recent call last):\n  File \"F:\\Plant_SPD_Medical_20261027\\source\\replication.py\", line 249, in train\n    write(ROOT/'PROGRESS.json',{'status':'RUNNING','run_id':c['run_id'],'epoch':ep+1,'epochs':c['epochs'],'train_f1':tr['macro_f1_fixed'],'held_f1':he['macro_f1_fixed'],'elapsed_sec':time.monotonic()-started})\n  File \"F:\\Plant_SPD_Medical_20261027\\source\\replication.py\", line 35, in write\n    def write(p,v): old.json_write(p,v)\n                    ^^^^^^^^^^^^^^^^^^^\n  File \"F:\\Plant_SPD\\02_experiments\\E01_paired_training\\source\\runner_v2.py\", line 73, in json_write\n    os.replace(tmp, path)\nPermissionError: [WinError 5] 拒绝访问。: 'F:\\\\Plant_SPD_Medical_20261027\\\\PROGRESS.json.tmp' -> 'F:\\\\Plant_SPD_Medical_20261027\\\\PROGRESS.json'\n",
+      "used_steps": 112
+    },
+    "run_id": "E01_0_3408_log",
+    "rerun_initialization_bindings_identical": true
+  }
+]

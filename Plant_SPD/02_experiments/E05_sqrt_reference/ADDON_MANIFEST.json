@@ -1,0 +1,181 @@
+{
+  "status": "FROZEN_WAITING_ALLOWED_NOT_LAUNCHED",
+  "utc": "2026-10-25T12:41:37.459568+00:00",
+  "root": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025",
+  "metadata_backup_root": "C:\\Users\\lenovo\\Documents\\PlantSPD_sqrt_geometry_reference_v1_20261025_live_metadata",
+  "runs": [
+    {
+      "run_id": "sqrv1_p0_s3407_sqrt",
+      "protocol_path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\protocols\\sqrv1_p0_s3407_sqrt.json",
+      "protocol_sha256": "63c5d06af1c02a269ee209055413ae629f763b0c0045050d4a438e866635f6ee",
+      "training_seed": 3407
+    },
+    {
+      "run_id": "sqrv1_p0_s3408_sqrt",
+      "protocol_path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\protocols\\sqrv1_p0_s3408_sqrt.json",
+      "protocol_sha256": "eb85d552d03c481a7c8f0cbc34f3e8cf3c490bb1cc3a4d728a3024dced9ed1dd",
+      "training_seed": 3408
+    }
+  ],
+  "runner_path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\runner_sqrt_v1.py",
+  "runner_sha256": "486110bd66f83104b5ececcc980a0487730c65b4e6e0165abef0a8255c813d00",
+  "controller_path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\addon_controller_v1.py",
+  "controller_sha256": "d6180a5013ac063f1094426708551062a218272a6270dfc86d0d55af8b4adce7",
+  "math_admission_path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\cuda_sqrt_math_admission_v1.py",
+  "math_admission_sha256": "89a40dda396d5b9207ab30410766ffbb2c913e7c723734aaff7d969128f3cd2d",
+  "ownership_source_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\controller_opt_recovery_v1.py",
+  "ownership_source_sha256": "a8c38e295bb19427fc4972cbd8562c347269b6d3a5e42bd9a0a2346e8e0acad3",
+  "gpu_python": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\gpu_env\\Scripts\\python.exe",
+  "cpu_python": "C:\\Users\\lenovo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "physical_gpu_uuid": "GPU-3ea4a0ed-f98c-1bf6-a474-36c3604e158e",
+  "window_path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\WINDOW.json",
+  "window_sha256": "74c72c4ab8b8942995697b430929e2f6d5925ededfcdd29c29199f2cf28ddb4e",
+  "main_deadline_utc": "2026-10-25T14:26:42.902795+00:00",
+  "gpu_hard_deadline_utc": "2026-10-25T16:26:42.902795+00:00",
+  "active_manifest_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\MANIFEST.json",
+  "active_manifest_sha256": "d37701d77132b9b8583f3b38f150b90bf298601e23308e3d44b18c7dd31bd628",
+  "active_end_path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\CONTROLLER_END.json",
+  "active_controller_identity": {
+    "pid": 36628,
+    "creation_time_windows_filetime": 134374003188384493
+  },
+  "cpu_end_path": "D:\\PlantSPD_work\\calibration_geometry_audit_v1_20261025\\CPU_TEMPERATURE_END.json",
+  "frozen_files": [
+    {
+      "path": "D:\\PlantSPD_work\\calibration_geometry_audit_v1_20261025\\CPU_TEMPERATURE_END.json",
+      "sha256": "11f9511f52e0f07a3ae720b512c135b1fec5d775702ef8a57048308d03e64a62"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\LAUNCH_RECEIPT.json",
+      "sha256": "cc1f26aa6906aa807909b669d037ada4e95a8b945e98dbc9afc566257352d000"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\MANIFEST.json",
+      "sha256": "d37701d77132b9b8583f3b38f150b90bf298601e23308e3d44b18c7dd31bd628"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\optimizer_geometry_control_v1_20261025_recovery1\\source\\controller_opt_recovery_v1.py",
+      "sha256": "a8c38e295bb19427fc4972cbd8562c347269b6d3a5e42bd9a0a2346e8e0acad3"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\WINDOW.json",
+      "sha256": "74c72c4ab8b8942995697b430929e2f6d5925ededfcdd29c29199f2cf28ddb4e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\assets\\resnet18-f37072fd.pth",
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\assets\\resnet18_torch_only_v1.py",
+      "sha256": "cb560556ff5f0c659ed4c4422d2a5b932470e1c3185f57cd741bf3ec054797ad"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\initializations\\INIT_p0_s3407.npz",
+      "sha256": "df9869de40e7eaa257d0a5629a973df3945fc26c375a1a8a03e5264359a7bc87"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\initializations\\INIT_p0_s3408.npz",
+      "sha256": "57e549b7b11e329ec4e683cc0768cc200145a0c18ce35365de38c57af3f14a0d"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\input\\meta.npz",
+      "sha256": "6405a2608dec434161214a251245d49b647777e61bdd6c166a450b42d0f98d09"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\input\\rgb_views_uint8.npy",
+      "sha256": "03c781736e5b87f71593bb2b68a4498227b1c7643c2015e9f5925f4dc876cbb8"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\prepared\\SPLITS.npz",
+      "sha256": "a6e9affa58a99be93fd5747e4b7f1e267655d27dd49d7431c53bb6339d7caf6b"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\prepared\\STREAMS.npz",
+      "sha256": "3f89aa25b626ead7d73a7ac77f9ad8d72e7d0846d648cc5e1ae7d5ff0b47049e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\protocols\\pst1r1_p0_s3407_raw.json",
+      "sha256": "2a942aaef6bbc6b9f3790e2e6923530725e07a69b9f98c8898ac06c28036a2ae"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\protocols\\pst1r1_p0_s3408_raw.json",
+      "sha256": "d8e2da12474dffb96dd8d70227a06899b207f0ee0384d71c52899c837ed60539"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\paired_seed_training_v1_20261025_recovery1\\source\\runner_v2.py",
+      "sha256": "d736dc0541a89b39c6485b376d37d9abc659e2ac3d2ea42283023c4e9f84b3bd"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\assets\\FEATURES.npz",
+      "sha256": "c7c0f7181dff16fc55a44ff71e0b6630709b0420175467a1b4355179f1f82494"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\contracts\\ADDON_GATE_CONTRACTS.json",
+      "sha256": "6a01d983859710ab0ab87f73531c108839b64898abfef624c704d4d9d9643f6f"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\contracts\\CPU_CONTRACTS.json",
+      "sha256": "47507381bb5a3e1841f303be31a19ceec1492e2b56d624107a02df5194fce50c"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\initializations\\INIT_p0_s3407_sqrt.npz",
+      "sha256": "9ddd3c2cbbdc5ee284ca9ba45c458f6cd66cfc77da57ad08eb1e6ed26e23097e"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\initializations\\INIT_p0_s3408_sqrt.npz",
+      "sha256": "07af646dc09ff6365f97dc7ffaa1877da609a2b0cc6bfd7831d27baab508b8c1"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\initializations\\MANIFEST.json",
+      "sha256": "0d8423eca67d1484f3003dfffbd327af173bb49ee785e4d1340dafe64bd0acfd"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\protocols\\sqrv1_p0_s3407_sqrt.json",
+      "sha256": "63c5d06af1c02a269ee209055413ae629f763b0c0045050d4a438e866635f6ee"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\protocols\\sqrv1_p0_s3408_sqrt.json",
+      "sha256": "eb85d552d03c481a7c8f0cbc34f3e8cf3c490bb1cc3a4d728a3024dced9ed1dd"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\addon_controller_v1.py",
+      "sha256": "d6180a5013ac063f1094426708551062a218272a6270dfc86d0d55af8b4adce7"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\cuda_sqrt_math_admission_v1.py",
+      "sha256": "89a40dda396d5b9207ab30410766ffbb2c913e7c723734aaff7d969128f3cd2d"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\prepare_addon_v1.py",
+      "sha256": "6fd3a41f492a72ecf03c1624188e7c723ce44b654bf212bcb3bb46ea7880c39d"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\prepare_sqrt_scales_v1.py",
+      "sha256": "79f113c5a5e40b2fd87c22d1c0acc3ce3ff40647ad72cd40fe8f7ae2cce71231"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\source\\runner_sqrt_v1.py",
+      "sha256": "486110bd66f83104b5ececcc980a0487730c65b4e6e0165abef0a8255c813d00"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\tests\\test_addon_gates_v1.py",
+      "sha256": "3a84f351d81598eb8b2f89588d097636e4d4f524843e5d1e16da28bcdb4b4b65"
+    },
+    {
+      "path": "D:\\PlantSPD_work\\sqrt_geometry_reference_v1_20261025\\tests\\test_sqrt_cpu_v1.py",
+      "sha256": "eaf944a911e6b5a27b18eefd6d85f589ea35aca73d72373c49b7513e4009cd25"
+    }
+  ],
+  "math_run_id": "sqrv1_cuda_sqrt_math_admission_01",
+  "math_inner_sec": 30,
+  "math_outer_sec": 60,
+  "no_retry_resume_or_new_candidates": true,
+  "limits": [
+    "Only two fixed20epoch/2620step Sqrt endpoints; standard LR/global5, p0/seeds3407/3408.",
+    "Launch only after all16 active controls and CPU temperature work complete and original active controller identity exited.",
+    "Conventional sqrt map plus separate TRAIN-only units is a training-pipeline reference, not pure metric causality.",
+    "All old Raw/Log and new Sqrt fixed-final outcomes are reported; two seeds/one reused held pool are exploratory.",
+    "Synthetic CUDA math admission tests the new map, not a new model-memory or full-model performance claim.",
+    "Original14:26 main/16:26 hard cutoffs remain fixed; no retry, extension, resume or automatic candidate expansion."
+  ]
+}

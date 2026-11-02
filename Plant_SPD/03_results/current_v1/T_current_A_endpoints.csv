@@ -1,0 +1,9 @@
+﻿arm,FIT_MacroF1_percent,dual_CE,B_sum_head_lr,evidence_id,source_path,source_F1_key
+A0,24.17798619719762,2.7902176000356596,1.3755,REC-A-SERIES,11_f1_f4_A_forensics_v1/cached_a0_s3407/COMPLETED.json,/train/macro_f1_fixed
+A,24.17798619719762,2.7901547997715888,1.3755,REC-A-SERIES,11_f1_f4_A_forensics_v1/cached_a_s3407/COMPLETED.json,/train/macro_f1_fixed
+A2,87.54363155190359,0.8972281646904471,13.755000000000003,REC-A-SERIES,11_f1_f4_A_forensics_v1/cached_a2_s3407/COMPLETED.json,/train/macro_f1_fixed
+A2prime,53.4715980027046,1.8677153225731977,3.9955000000000003,REC-A-SERIES,11_f1_f4_A_forensics_v1/cached_a2prime_s3407/COMPLETED.json,/train/macro_f1_fixed
+A3,76.67474301085142,1.0617341510155935,1.3755,REC-A-SERIES,11_f1_f4_A_forensics_v1/cached_a3_s3407/COMPLETED.json,/train/macro_f1_fixed
+A2_seed3408,87.8193282562979,0.8962720209004377,13.755000000000003,REC-A-SERIES,11_f1_f4_A_forensics_v1/cached_a2_s3408/COMPLETED.json,/train/macro_f1_fixed
+A2_seed3409,88.02906233104592,0.8932329924286126,13.755000000000003,REC-A-SERIES,11_f1_f4_A_forensics_v1/cached_a2_s3409/COMPLETED.json,/train/macro_f1_fixed
+A4_Log,89.1928642050258,0.5012912752789844,6.630000000000001,REC-A-SERIES,11_f1_f4_A_forensics_v1/A4_log_actual_v1/RESULT.json,/final_TRAIN/macro_f1_fixed

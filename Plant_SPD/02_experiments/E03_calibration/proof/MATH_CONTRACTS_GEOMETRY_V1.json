@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-25T11:53:07.196198+00:00",
+  "scope": "Synthetic NumPy only; no input data, model loading, forward pass, training, GPU, or active-run changes.",
+  "source_sha256": "38871349c0bd332eff75293f097efa99287c8f0b0f75100436c83a18807ff9c6",
+  "affine_congruence_counterexample": {
+    "A": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "B": [
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ]
+    ],
+    "G": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "log_euclidean_before": 1.2671862513647194,
+    "log_euclidean_after": 0.9743696789330495,
+    "affine_invariant_before": 1.3028482875855698,
+    "affine_invariant_after": 1.3028482875855696,
+    "orthogonal_and_common_scale_invariance": "PASS"
+  },
+  "sqrt_derivative": {
+    "frechet_coefficients": "1/(sqrt(lambda_i)+sqrt(lambda_j))",
+    "scalar_lambda": [
+      0.0001,
+      1e-08,
+      1e-12
+    ],
+    "scalar_derivative": [
+      50.0,
+      5000.0,
+      500000.0
+    ],
+    "diverges_as_lambda_approaches_zero": true,
+    "unscaled_sqrt_frobenius_operator_bound_at_existing_eps_1e-4": 50.0,
+    "log_frobenius_operator_bound_at_existing_eps_1e-4": 10000.0,
+    "repeated_spectrum_finite_difference_relative_error": 1.720681209545596e-10,
+    "limitation": "Bounds concern only the matrix-function derivative, not the normalized loss, full-network gradient, or AdamW update."
+  },
+  "temperature_scaling": {
+    "positive_temperatures_checked": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "argmax_unchanged_including_deterministic_tie_rule": true,
+    "logit_common_shift_softmax_invariance": true,
+    "raw_logit_norm_identifiable_from_probabilities": false
+  },
+  "primary_sources": [
+    "https://doi.org/10.1002/mrm.20965",
+    "https://www-sop.inria.fr/asclepios/Publications/Arsigny/arsigny_rr_tensors.pdf",
+    "https://arxiv.org/pdf/1705.08561",
+    "https://proceedings.mlr.press/v70/guo17a/guo17a.pdf",
+    "https://proceedings.iclr.cc/paper_files/paper/2025/file/70270a1bc28ecb2a2aefad566c5e556b-Paper-Conference.pdf"
+  ]
+}

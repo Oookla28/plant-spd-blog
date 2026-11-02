@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "generated_utc": "2026-11-02T15:19:03.430038+00:00",
+  "numpy_version": "2.0.2",
+  "device": "cpu",
+  "synthetic_seed": 20261102,
+  "contract_count": 16,
+  "checks": [
+    {
+      "name": "A1_unregularized_risk_certificate",
+      "pass": true,
+      "detail": "e=2.83608733135654e-05, bound=0.002033415670833401"
+    },
+    {
+      "name": "A2_regularized_target_certificate",
+      "pass": true,
+      "detail": "abs=2.333800690756949e-06, bound=0.003945340614290696"
+    },
+    {
+      "name": "A3_gradient_gap_certificate",
+      "pass": true,
+      "detail": "gap=8.233750006803042e-08, grad_bound=6.580254166668076e-06"
+    },
+    {
+      "name": "A4_sign_separation_accepts",
+      "pass": true,
+      "detail": "decision=ACCEPT"
+    },
+    {
+      "name": "A5_inside_radius_indeterminate",
+      "pass": true,
+      "detail": "decision=INDETERMINATE"
+    },
+    {
+      "name": "A6_native_anchor_does_not_certify_R0",
+      "pass": true,
+      "detail": "decision=INDETERMINATE, reason=certificate or non-saturation condition is missing"
+    },
+    {
+      "name": "B1_K2_single_sample_rank_one",
+      "pass": true,
+      "detail": "rank=1, abs_cos=0.9999999999999999"
+    },
+    {
+      "name": "B2_K3_distinct_non_target_rank_two",
+      "pass": true,
+      "detail": "rank=2, abs_cos=0.929951"
+    },
+    {
+      "name": "B3_K3_equal_non_target_rank_one",
+      "pass": true,
+      "detail": "rank=1"
+    },
+    {
+      "name": "B4_K69_identity_jacobian_rank_two",
+      "pass": true,
+      "detail": "rank=2"
+    },
+    {
+      "name": "B5_K69_rank_one_jacobian_counterexample",
+      "pass": true,
+      "detail": "rank=1"
+    },
+    {
+      "name": "B6_K2_batch_jacobian_counterexample",
+      "pass": true,
+      "detail": "rank=2"
+    },
+    {
+      "name": "C1_mismatched_objects_reject",
+      "pass": true,
+      "detail": "decision=REJECT"
+    },
+    {
+      "name": "C2_missing_gap_indeterminate",
+      "pass": true,
+      "detail": "decision=INDETERMINATE"
+    },
+    {
+      "name": "C3_saturation_indeterminate",
+      "pass": true,
+      "detail": "decision=INDETERMINATE"
+    },
+    {
+      "name": "C4_certified_negative_sign_accept",
+      "pass": true,
+      "detail": "decision=ACCEPT"
+    }
+  ],
+  "theory_file": "RIGOROUS_AUDIT_THEORY_V2.md",
+  "theory_sha256": "3506030fdd8781cacd7a9cf9d44a3b25efa8170f5dd86a01a158eecad717c2fd",
+  "limits": [
+    "Contracts verify algebraic identities, local rank conditions, and protocol state transitions only.",
+    "They do not establish HELD generalization or real-data causal mechanisms.",
+    "K=2 collinearity is single-sample with fixed Jacobian; a batch counterexample is included.",
+    "Native comparator norms do not certify the unregularized optimum without an additional bias/norm argument."
+  ]
+}

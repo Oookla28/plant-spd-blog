@@ -1,0 +1,18 @@
+已有裁剪系数诊断：8个已完成终点，Raw/Log×global/block×2seed。
+以下为两seed各2620step合并；std/variance为总体量，CV=std/mean。
+Jensen proxy=E[c]/sqrt(E[c²])，只是系数离散度摘要，不是AdamW有效更新或因果惩罚。
+
+condition method group | mean std CV proxy | corr(c,own_preclip_norm) corr(c,global_preclip_norm)
+standard_block log encoder | 0.426921 0.212658 0.498122 0.895099 | -0.889425 -0.892452
+standard_block log head | 0.711147 0.176688 0.248455 0.970494 | -0.966836 -0.819379
+standard_block raw encoder | 0.568148 0.364201 0.641032 0.841877 | -0.947414 -0.948716
+standard_block raw head | 0.849617 0.193355 0.227579 0.975068 | -0.932833 -0.905718
+standard_global log encoder | 0.491471 0.189869 0.386329 0.932809 | -0.905305 -0.917839
+standard_global log head | 0.491471 0.189869 0.386329 0.932809 | -0.767410 -0.917839
+standard_global raw encoder | 0.626560 0.333948 0.532986 0.882480 | -0.963422 -0.964751
+standard_global raw head | 0.626560 0.333948 0.532986 0.882480 | -0.955063 -0.964751
+
+每run完整27个窗口（26×100steps+20step tail）的mean/variance/CV/proxy和相关性均在JSON。
+源码核验：checkpoint只保存model.state_dict及provenance，不保存optimizer.state_dict/m/v。未反序列化checkpoint。
+不能画真实v轨迹，不能由group norm、系数CV或稀疏update摘要反推。
+裁剪系数与梯度范数的相关主要受裁剪定义和训练进程共同影响；不据此宣称Jensen因果或狭窄走廊。
