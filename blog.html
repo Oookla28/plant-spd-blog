@@ -115,7 +115,7 @@ body{overflow-x:hidden}.md-content{word-break:break-word}.search input{min-width
   <h1>一个病害识别项目怎样走到协方差几何</h1>
   <p class="lead">一开始，这个项目很容易被写成一张 Raw、Log、Sqrt 的成绩表：谁的 F1 高，谁就是更好的几何。真正做下去以后，问题反而变得更具体也更麻烦——当表示、读出、优化预算和评估口径一起变化时，一个端点差异到底还能不能叫作“表示优势”？这里想讲清楚的，就是这个问题怎样一步步被拆开。Plant_SPD 提供 69 类植物病害的主证据链，Plant_SPD_TEST2 提供 ISIC2016 二分类的外域边界复核。</p>
   <p class="hero-note">我一开始也只是在看分数。真正让我停下来的是，同一个问题里，模型、读出和训练配方一变，分数就会跟着变。我想弄清楚的，后来变成了一个更具体的问题：一个差异到底来自哪里。于是我们把表示、读出、优化和评估一层层拆开，看看特征里有没有信息、读出能不能找到、训练有没有走到，以及这个判断能不能跨到留出数据。</p>
-  <div class="meta"><span class="pill">研究主线：从叶境智鉴到 SPD 几何</span><span class="pill">主线：SPD 协方差表示 · Log-Euclidean 映射 · 比较表示、读出和训练<span class="pill">证据原则：TRAIN 认证 ≠ HELD 泛化</span></div>
+  <div class="meta"><span class="pill">研究主线：从叶境智鉴到 SPD 几何</span><span class="pill">主线：SPD 协方差表示 · Log-Euclidean 映射 · 比较表示、读出和训练</span><span class="pill">证据原则：TRAIN 认证 ≠ HELD 泛化</span></div>
 </section>
 <div class="search"><input id="searchBox" placeholder="检索本页：E01、F2、温度、K 阶梯、证书……"><button onclick="document.getElementById('searchBox').value='';filterCards()">清除</button></div>
 <section class="section" data-search="总览 植物 医学 数学 证据" id="overview-cards">
@@ -285,7 +285,7 @@ body{overflow-x:hidden}.md-content{word-break:break-word}.search input{min-width
   <p class="section-intro">这些实验不是为了堆数量。每一条线都让问题更具体一点，也让某种过于简单的解释变得不再够用。下面的表格把结果、同组排序和不能继续推出的结论放在一起。</p>
   <div class="table-wrap"><table><thead><tr><th>实验线</th><th>主要工作</th><th>最强观察</th><th>它削弱了什么解释</th><th>仍然不能推出什么</th></tr></thead><tbody>
     <tr><td>E01</td><td>2 划分×5 seed×Raw/Log，固定 20 epoch / 2,620 updates</td><td>Log−Raw 平均约 +2.10pp，10/10 seed 方向为正；图像 bootstrap 跨零</td><td>说明固定配方下确实有可观察现象</td><td>不能单独证明 Log 的表示最优风险更低</td></tr>
-    <tr><td>E02</td><td>学习率、global/block clipping、16 格对照</td><td>0.3×LR 对 Log 影响尤其明显，裁剪收益有条件</td><td>削弱“端点差只由几��决定”</td><td>不能锁定唯一优化器机制</td></tr>
+    <tr><td>E02</td><td>学习率、global/block clipping、16 格对照</td><td>0.3×LR 对 Log 影响尤其明显，裁剪收益有条件</td><td>削弱“端点差只���几何决定”</td><td>不能锁定唯一优化器机制</td></tr>
     <tr><td>E03</td><td>4 个冻结模型的 5 折交叉温标</td><td>Raw–Log NLL 差距缩小约 89.3%，F1 和 argmax 不变</td><td>把概率尺度差和分类能力差分开</td><td>不能把 NLL 变化当成几何贡献比例</td></tr>
     <tr><td>E04</td><td>TRAIN CE 阶段匹配、采样更新和裁剪日志诊断</td><td>匹配拟合阶段后 Log 仍有优势</td><td>削弱“只要训练阶段没对齐就能解释全部差异”</td><td>事后日志比较仍不能排除所有优化路径因素</td></tr>
     <tr><td>E05</td><td>新增 Sqrt 参考臂</td><td>HELD 均值 57.516%，对 Log 两 seed 一胜一负</td><td>削弱“Log 普遍胜过所有映射”</td><td>不能构成普适 Raw/Sqrt/Log 排名</td></tr>
@@ -505,4 +505,4 @@ body{overflow-x:hidden}.md-content{word-break:break-word}.search input{min-width
 
 
 </body>
-</html>
+<
