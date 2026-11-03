@@ -31,7 +31,7 @@ window.MathJax = {
 <script src="blog_data_3.js?v=20261103-links"></script>
 <script src="blog_data_meta.js?v=20261103-links"></script>
 <style id="responsive-overrides">
-body{overflow-x:hidden}.md-content{word-break:break-word}
+body{overflow-x:hidden}.md-content{word-break:break-word}.search input{min-width:0}.search button{flex:0 0 auto;min-width:48px}
 @media(min-width:1400px){.shell{grid-template-columns:290px minmax(0,1fr)}.main{max-width:1280px;padding-left:72px;padding-right:72px}.md-dialog{width:min(1180px,92vw)}}
 @media(max-width:1000px){
   .side{position:sticky;top:0;z-index:10;height:auto;max-height:none;padding:14px 16px 12px;box-shadow:0 4px 16px rgba(24,20,14,.18)}
@@ -74,7 +74,8 @@ body{overflow-x:hidden}.md-content{word-break:break-word}
   .chart svg{min-width:560px}
   .chart h4{font-size:16px}
   .search{top:73px;padding:9px 0}
-  .search input{min-width:0;font-size:14px}
+  .search input{min-width:0;width:0;font-size:14px}
+  .search button{height:40px;min-width:42px}
   .search button{padding:0 11px}
   .gate{min-height:0;padding:13px}
   .md-modal{padding:0}
